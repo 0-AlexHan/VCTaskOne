@@ -16,7 +16,7 @@ class ThirdViewController: UIViewController {
     }
     
     @IBAction func backToFirstVC(_ sender: Any) {
-        self.navigationController?.dismiss(animated: true)
+        self.dismiss(animated: true)
     }
     
     /*

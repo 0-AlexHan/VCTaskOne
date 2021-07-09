@@ -19,6 +19,16 @@ class FourthViewController: UIViewController {
         self.navigationController?.dismiss(animated: true)
     }
     
+    @IBAction func didPushToVC5(_ sender: Any) {
+        let viewControllerID = "FifthVC"
+        performPush(viewControllerFromStoryboard: storyboard?.instantiateViewController(identifier: viewControllerID))
+    }
+    
+    func performPush(viewControllerFromStoryboard: UIViewController?) {
+        if let viewController = viewControllerFromStoryboard {            
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
     /*
     // MARK: - Navigation
 

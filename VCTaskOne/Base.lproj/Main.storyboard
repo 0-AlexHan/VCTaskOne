@@ -46,7 +46,7 @@
                                             <color key="titleColor" systemColor="systemYellowColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="5Vr-6m-kI3" kind="push" id="HfD-JD-93J"/>
+                                            <action selector="didPushToVC2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ipr-WO-E8F"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzF-SS-TDe">
@@ -60,7 +60,7 @@
                                             <color key="titleColor" systemColor="systemYellowColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ggS-fX-nyh" kind="modal" id="1V7-xd-87U"/>
+                                            <action selector="didModalVC3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z0V-wj-RUu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9w-is-Y6v">
@@ -74,7 +74,7 @@
                                             <color key="titleColor" systemColor="systemYellowColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="oJK-9Z-t2p" kind="modal" id="LFy-Ya-6kX"/>
+                                            <action selector="didModalVC4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bB0-PP-sNe"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -94,32 +94,16 @@
             </objects>
             <point key="canvasLocation" x="-165" y="88"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="XOE-L0-BCe">
-            <objects>
-                <navigationController id="oJK-9Z-t2p" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fh8-g0-hfa">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="meM-Re-1hN" kind="relationship" relationship="rootViewController" id="Ucz-Qi-V72"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xCh-IJ-FRt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1038" y="856"/>
-        </scene>
         <!--Fourth UIViewController-->
         <scene sceneID="BxV-tJ-VUP">
             <objects>
-                <viewController title="Fourth UIViewController" id="meM-Re-1hN" customClass="FourthViewController" customModule="VCTaskOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FourthVC" title="Fourth UIViewController" id="meM-Re-1hN" customClass="FourthViewController" customModule="VCTaskOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Om1-0V-Pno">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KR4-sJ-4J6">
-                                <rect key="frame" x="120" y="381" width="150" height="50"/>
+                                <rect key="frame" x="120" y="402" width="150" height="50"/>
                                 <color key="backgroundColor" red="0.94333755970001221" green="0.72529224051942465" blue="0.5737573463771759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="EaG-gl-iGg"/>
@@ -129,11 +113,11 @@
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dPl-9z-3La" kind="push" id="Juc-tT-Pcr"/>
+                                    <action selector="didPushToVC5:" destination="meM-Re-1hN" eventType="touchUpInside" id="E3G-yC-Cey"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWH-Gb-n0V">
-                                <rect key="frame" x="120" y="671" width="150" height="50"/>
+                                <rect key="frame" x="120" y="725" width="150" height="50"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="uUE-8G-ezb"/>
@@ -165,13 +149,13 @@
         <!--Fifth UIViewController-->
         <scene sceneID="V55-1Y-Q4L">
             <objects>
-                <viewController title="Fifth UIViewController" id="dPl-9z-3La" customClass="FifthViewController" customModule="VCTaskOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FifthVC" title="Fifth UIViewController" id="dPl-9z-3La" customClass="FifthViewController" customModule="VCTaskOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wkn-mp-Mn6">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Peo-Gc-aT8">
-                                <rect key="frame" x="120" y="672" width="150" height="50"/>
+                                <rect key="frame" x="120" y="726" width="150" height="50"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Iah-Tz-ufJ"/>
@@ -201,17 +185,23 @@
         <!--Third UIViewController-->
         <scene sceneID="K5y-du-1Se">
             <objects>
-                <viewController title="Third UIViewController" id="ggS-fX-nyh" customClass="ThirdViewController" customModule="VCTaskOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThirdVC" title="Third UIViewController" id="ggS-fX-nyh" customClass="ThirdViewController" customModule="VCTaskOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zgq-Oc-Dli">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upS-bN-Ctn">
+                                <rect key="frame" x="114.66666666666669" y="121" width="161" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djB-a3-WL4">
-                                <rect key="frame" x="120" y="665" width="150" height="50"/>
+                                <rect key="frame" x="120" y="724" width="150" height="50"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="9On-Cg-V1D"/>
-                                    <constraint firstAttribute="height" constant="50" id="oKp-gS-yre"/>
+                                    <constraint firstAttribute="width" constant="150" id="1Mg-7A-WlK"/>
+                                    <constraint firstAttribute="height" constant="50" id="Tjs-sJ-5oY"/>
                                 </constraints>
                                 <state key="normal" title="Close">
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
@@ -220,20 +210,14 @@
                                     <action selector="backToFirstVC:" destination="ggS-fX-nyh" eventType="touchUpInside" id="cQR-sO-xBx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upS-bN-Ctn">
-                                <rect key="frame" x="114.66666666666669" y="77" width="161" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iQM-ne-1pK"/>
                         <color key="backgroundColor" red="0.73410504902773666" green="0.57366971313155712" blue="0.96578763711332072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="upS-bN-Ctn" firstAttribute="top" secondItem="iQM-ne-1pK" secondAttribute="top" constant="77" id="2Yz-Dj-hc4"/>
+                            <constraint firstItem="djB-a3-WL4" firstAttribute="centerX" secondItem="iQM-ne-1pK" secondAttribute="centerX" id="5ec-nc-ibh"/>
                             <constraint firstItem="upS-bN-Ctn" firstAttribute="centerX" secondItem="iQM-ne-1pK" secondAttribute="centerX" id="Qca-YC-zxo"/>
-                            <constraint firstItem="djB-a3-WL4" firstAttribute="centerX" secondItem="iQM-ne-1pK" secondAttribute="centerX" id="ST7-E2-q0D"/>
-                            <constraint firstItem="iQM-ne-1pK" firstAttribute="bottom" secondItem="djB-a3-WL4" secondAttribute="bottom" constant="41" id="yVq-45-0ab"/>
+                            <constraint firstItem="iQM-ne-1pK" firstAttribute="bottom" secondItem="djB-a3-WL4" secondAttribute="bottom" constant="36" id="pe1-ca-VQO"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -244,7 +228,7 @@
         <!--Second UIViewController-->
         <scene sceneID="26Z-pb-k3O">
             <objects>
-                <viewController title="Second UIViewController" id="5Vr-6m-kI3" customClass="SecondViewController" customModule="VCTaskOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" title="Second UIViewController" id="5Vr-6m-kI3" customClass="SecondViewController" customModule="VCTaskOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="stc-c1-xaF">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
