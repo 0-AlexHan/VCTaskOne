@@ -16,7 +16,7 @@ class FourthViewController: UIViewController {
     }
     
     @IBAction func backToFirstVC(_ sender: Any) {
-        self.navigationController?.dismiss(animated: true)
+        self.dismiss(animated: true)
     }
     
     @IBAction func didPushToVC5(_ sender: Any) {
