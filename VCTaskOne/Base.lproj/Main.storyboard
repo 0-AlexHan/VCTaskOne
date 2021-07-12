@@ -220,18 +220,10 @@
                                     <action selector="backToFirstVC:" destination="ggS-fX-nyh" eventType="touchUpInside" id="cQR-sO-xBx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upS-bN-Ctn">
-                                <rect key="frame" x="114.66666666666669" y="77" width="161" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iQM-ne-1pK"/>
                         <color key="backgroundColor" red="0.73410504902773666" green="0.57366971313155712" blue="0.96578763711332072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="upS-bN-Ctn" firstAttribute="top" secondItem="iQM-ne-1pK" secondAttribute="top" constant="77" id="2Yz-Dj-hc4"/>
-                            <constraint firstItem="upS-bN-Ctn" firstAttribute="centerX" secondItem="iQM-ne-1pK" secondAttribute="centerX" id="Qca-YC-zxo"/>
                             <constraint firstItem="djB-a3-WL4" firstAttribute="centerX" secondItem="iQM-ne-1pK" secondAttribute="centerX" id="ST7-E2-q0D"/>
                             <constraint firstItem="iQM-ne-1pK" firstAttribute="bottom" secondItem="djB-a3-WL4" secondAttribute="bottom" constant="41" id="yVq-45-0ab"/>
                         </constraints>
