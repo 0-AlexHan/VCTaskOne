@@ -20,8 +20,8 @@ class FourthViewController: UIViewController {
     }
     
     @IBAction func didPushToVC5(_ sender: Any) {
-        let viewControllerID = "FifthVC"
-        performPush(viewControllerFromStoryboard: storyboard?.instantiateViewController(identifier: viewControllerID))
+        let viewControllerID = String(describing: FifthViewController.self)
+        performPush(viewControllerFromStoryboard: storyboard?.instantiateViewController(identifier: viewControllerID) as? FifthViewController)
     }
     
     func performPush(viewControllerFromStoryboard: UIViewController?) {

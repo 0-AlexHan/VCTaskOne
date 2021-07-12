@@ -15,25 +15,25 @@ class FirstViewController: UIViewController {
     }
 
     @IBAction func didPushToVC2(_ sender: Any) {
-        let viewControllerID = "SecondVC"
+        let viewControllerID = String(describing: SecondViewController.self)
         performPush(viewControllerFromStoryboard:
-                        storyboard?.instantiateViewController(identifier: viewControllerID))
+                        storyboard?.instantiateViewController(identifier: viewControllerID) as? SecondViewController)
     }
     
     @IBAction func didModalVC3(_ sender: Any) {
-        let viewControllerID = "ThirdVC"
+        let viewControllerID = String(describing: ThirdViewController.self)
         performModal(viewControllerFromStoryboard:
-                        storyboard?.instantiateViewController(identifier: viewControllerID))
+                        storyboard?.instantiateViewController(identifier: viewControllerID) as? ThirdViewController)
        
     }
     
     @IBAction func didModalVC4(_ sender: Any) {
-        let viewControllerID = "FourthVC"
+        let viewControllerID = String(describing: FourthViewController.self)
         let navigationController = UINavigationController()
                                                                  
         performModal(viewControllerFromStoryboard:
-                        storyboard?.instantiateViewController(identifier: viewControllerID),
-                        optionalNC:  navigationController)
+                     storyboard?.instantiateViewController(identifier: viewControllerID) as? FourthViewController,
+                     optionalNC:  navigationController)
             
         }
         
